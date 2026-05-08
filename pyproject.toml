@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resort-fnb-forecasting"
+version = "0.1.0"
+description = "Seq2Seq LSTM ensemble for resort F&B 7-day sales forecasting."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "torch>=2.0",
+    "holidays>=0.40",
+]
+
+[project.scripts]
+resort-fnb-forecast = "resort_fnb_forecasting.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
