@@ -2,7 +2,7 @@
 
 LG Aimers 리조트 식음업장 결제 데이터를 활용해 메뉴별 향후 7일 매출수량을 예측하는 LSTM 기반 시계열 예측 프로젝트입니다.
 
-입력은 최근 28일의 메뉴별 매출 및 캘린더 feature이며, 출력은 이후 7일의 매출수량입니다. 기본 모델은 메뉴 embedding을 포함한 Seq2Seq LSTM이고, 성능 개선을 위해 seed bagging 방식의 5-model ensemble을 지원합니다.
+입력은 최근 28일의 메뉴별 매출 및 캘린더 feature이며, 출력은 이후 7일의 매출수량입니다. 기본 모델은 메뉴 embedding을 포함한 Seq2Seq LSTM이고, 성능 개선을 위해 seed bagging 방식의 5-model ensemble을 사용해 보았습니다.
 
 ## Project Structure
 
